@@ -1,0 +1,6 @@
+<h2> Choose Your Queens </h2>
+
+<div *ngFor="let queen of queens" (click)="onSelect(queen)">
+	{{ queen.name }}
+	<img src="{{'../../assets/queen-photos/' + queen.url }}">
+</div>
